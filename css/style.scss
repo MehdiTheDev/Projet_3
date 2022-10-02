@@ -1,5 +1,9 @@
-body {
-    margin: 0;
+* {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    body {
+        margin: 0;
+    }  
 }
 
 header {
@@ -15,9 +19,14 @@ header {
 .location {
     display: flex;
     justify-content: center;
+    color: rgb(56, 56, 56);
+    background-color: rgb(221, 221, 221);
     &__icon {
         display: flex;
         align-items: center;
         padding: 1rem;
+    }
+    &__title {
+        font-weight: 700;
     }
 }

@@ -1,4 +1,8 @@
-body {
+* {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+* body {
   margin: 0;
 }
 
@@ -15,9 +19,14 @@ header img {
 .location {
   display: flex;
   justify-content: center;
+  color: rgb(56, 56, 56);
+  background-color: rgb(221, 221, 221);
 }
 .location__icon {
   display: flex;
   align-items: center;
   padding: 1rem;
+}
+.location__title {
+  font-weight: 700;
 }/*# sourceMappingURL=style.css.map */
