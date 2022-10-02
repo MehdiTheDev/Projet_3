@@ -75,3 +75,51 @@ header {
     }
 }
 
+.menu {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 1rem;
+    &__btn {
+        display: flex;
+        align-items: center;
+        margin: 1rem;
+        font-size: 1.5rem;
+    }
+    &__number {
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #9356DC;
+        padding: 0.5rem;
+        min-height: 20px;
+        min-width: 20px;
+        border-radius: 2rem;
+        color: white;
+        font-size: 1rem;
+    }
+    &__inerbtn {
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        flex-basis: 100%;
+        padding: 1rem 2rem;
+        gap: 2.5rem;
+        border-radius: 2rem;
+        border: 0;
+        box-shadow: 0px 10px 10px rgba(170, 170, 170, 0.425);
+        font-weight: 700;
+        font-size: 1.5rem;
+        margin-left: -1rem;
+        background-color: rgb(245, 245, 245);
+        &:hover {
+            background-color: #9256dc38;
+        }
+    }
+    &__icon {
+        color: grey;
+        &:hover {
+            color: #9356DC;
+        }
+    }
+}
