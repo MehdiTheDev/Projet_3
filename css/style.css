@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0px 15px black;
+}
+header img {
+  width: 300px;
+  padding: 1rem 0;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+}
+.location__icon {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}/*# sourceMappingURL=style.css.map */
