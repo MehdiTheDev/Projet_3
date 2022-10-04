@@ -26,8 +26,8 @@
                 <p class="location__title">Paris, Belleville</p>
             </div>
             <article class="title">
-                <h1 class="title__h1">Réservez le menu qui <br> vous convient</h1>
-                <p class="title__p">Découvrez des restaurants d'exeption,<br> séléctionnés par nos soins.</p>
+                <h1 class="title__h1">Réservez le menu qui vous convient</h1>
+                <p class="title__p">Découvrez des restaurants d'exeption, séléctionnés par nos soins.</p>
                 <button class="title__btn">Explorer nos restaurants</button>
             </article>
         </section>
@@ -35,83 +35,85 @@
             <h2 class="menu__title">Fonctionnement</h2>
             <div class="menu__btn">
                 <p class="menu__number">1</p>
-                <button class="menu__inerbtn">
-                    <i class="menu__icon fa-solid fa-mobile-screen-button"></i>
+                <button>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
                     <p>Choisissez un restaurants</p>
                 </button>
             </div>
             <div class="menu__btn">
                 <p class="menu__number">2</p>
-                <button class="menu__inerbtn">
-                    <i class="menu__icon fa-solid fa-list-ul"></i>
+                <button>
+                    <i class="fa-solid fa-list-ul"></i>
                     <p>Composez votre menu</p>
                 </button>
             </div>
             <div class="menu__btn">
                 <p class="menu__number">3</p>
-                <button class="menu__inerbtn">
-                    <i class="menu__icon fa-sharp fa-solid fa-store"></i>
+                <button>
+                    <i class="fa-sharp fa-solid fa-store"></i>
                     <p>Dégustez au restaurants</p>
                 </button>
             </div>
         </section>
-        <section>
+        <section class="rstr">
             <h2>Restaurants</h2>
             <div>
-                <article>
+                <article class="rstr__card">
+                    <h3 class="rstr__card__new">Nouveau</h3>
                     <img src="/images/restaurants/la_palette_du_gout.jpg" alt="la palette du goût">
-                    <div>
-                        <h3>La palette du goût</h3>
-                        <p>Ménilmontant</p>
-                        <i class="fa-light fa-heart"></i>
-                        <i class="fa-solid fa-heart"></i>
+                    <div class="rstr__description">
+                        <div class="rstr__cardinfo">
+                            <h3>La palette du goût</h3>
+                            <p>Ménilmontant</p>
+                        </div>
+                        <i class="rstr__card__icon fa-solid fa-heart"></i>
                     </div>
                 </article>
-                <article>
+                <article class="rstr__card">
+                    <h3 class="rstr__card__new">Nouveau</h3>
                     <img src="/images/restaurants/la_note_enchantee.jpg" alt="La note enchantée">
-                    <div>
-                        <h3>La note enchantée</h3>
-                        <p>Charonne</p>
-                        <i class="fa-light fa-heart"></i>
-                        <i class="fa-solid fa-heart"></i>
+                    <div class="rstr__description">
+                        <div class="rstr__cardinfo">
+                            <h3>La note enchantée</h3>
+                            <p>Charonne</p>
+                        </div>
+                        <i class="rstr__card__icon fa-solid fa-heart"></i>
                     </div>
                 </article>
-                <article>
+                <article class="rstr__card">
                     <img src="/images/restaurants/a_la_francaise.jpg" alt="A la française">
-                    <div>
-                        <h3>A la française</h3>
-                        <p>Cité rouge</p>
-                        <i class="fa-light fa-heart"></i>
-                        <i class="fa-solid fa-heart"></i>
+                    <div class="rstr__description">
+                        <div class="rstr__cardinfo">
+                            <h3>A la française</h3>
+                            <p>Cité rouge</p>  
+                        </div>
+                        <i class="rstr__card__icon fa-solid fa-heart"></i>
                     </div>
                 </article>
-                <article>
+                <article class="rstr__card">
                     <img src="/images/restaurants/le_delice_des_sens.jpg" alt="Les délices des sens">
-                    <div>
-                        <h3>Les délices des sens</h3>
-                        <p>Folie-Méricourt  </p>
-                        <i class="fa-light fa-heart"></i>
-                        <i class="fa-solid fa-heart"></i>
+                    <div class="rstr__description">
+                        <div class="rstr__cardinfo">
+                            <h3>Les délices des sens</h3>
+                            <p>Folie-Méricourt  </p>
+                        </div>
+                        <i class="rstr__card__icon fa-solid fa-heart"></i>
                     </div>
                 </article>
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="ftr">
         <img src="/images/logo/ohmyfood@2x.svg" alt="OhMyFood">
-        <div>
-            <div>
-                <a href="#">
-                    <i class="fa-solid fa-utensils"></i>
-                    <p>Proposer un restaurant</p> 
-                </a>
-            </div>
-            <div>
-                <a href="#">
-                    <i class="fa-solid fa-handshake-angle"></i>
-                    <p>Devenir partenaire</p>
-                </a>
-            </div>
+        <div class="ftr__list">
+            <a href="#">
+                <i class="fa-solid fa-utensils"></i>
+                <p>Proposer un restaurant</p> 
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-handshake-angle"></i>
+                <p>Devenir partenaire</p>
+            </a>
             <a href="#">
                 <p>Mentions légales</p>
             </a>
