@@ -113,7 +113,7 @@ header {
         gap: 2.5rem;
         border-radius: 1.3rem;
         border: 0;
-        box-shadow: 0px 10px 15px rgba(170, 170, 170, 0.425);
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
         font-weight: 700;
         font-size: 1.1rem;
         margin-left: -1rem;
@@ -121,6 +121,7 @@ header {
         transition: 0.7s;
         &:hover {
             background-color: #9256dc38;
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
                 .fa-solid {
                     color: #9356DC;
                     padding-left: 1rem;
@@ -155,6 +156,7 @@ header {
         height: 250px;
         position: relative;
         &__new {
+            margin: 0;
             font-size: 1.1rem;
             padding: 0.7rem;
             border-radius: 0.2rem;
@@ -162,16 +164,28 @@ header {
             background-color: #99E2D0;
             position: absolute;
             right: 5%;
-            top: 5%;
+            top: 7%;
         }
         &__icon {
-            -webkit-text-stroke: 1px black;
             font-size: 2rem;
+            background-image: linear-gradient(#FF79DA , #9356DC);
+            background-clip: text;
             color: transparent;
+            opacity: 0;
+            transition: 300ms;
+            position: absolute;
+            right: 1.5rem;
             &:hover {
-                -webkit-text-stroke: transparent;
-                background-image: linear-gradient(#FF79DA , #9356DC);
-                background-clip: text;
+                opacity: 1;
+            }
+        }
+        &__iconstrock {
+            font-size: 2rem;
+            opacity: 1;
+            transition: 300ms;
+            color: black;
+            &:hover {
+                opacity: 0;
             }
         }
     }

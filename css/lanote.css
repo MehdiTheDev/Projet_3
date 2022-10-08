@@ -40,7 +40,8 @@
   padding: 1.5rem;
   background-color: #f6f6f6;
   position: relative;
-  border-radius: 2rem 2rem 0 0;
+  border-radius: 3rem 3rem 0 0;
+  /*box-shadow: 0px -15px 40px rgb(0, 0, 0, 0.3); petit plus*/
 }
 .main__title {
   display: flex;
@@ -87,6 +88,10 @@
     opacity: 100;
   }
 }
+.section__card_price {
+  transition: 0.5s;
+}
+
 .section {
   margin-top: 0;
   margin-bottom: 4rem;
@@ -108,13 +113,50 @@
   -webkit-animation: ouverture 1300ms forwards;
           animation: ouverture 1300ms forwards;
   opacity: 0;
+  position: relative;
+  overflow: hidden;
+}
+.section__card:hover aside {
+  margin: 0;
+}
+.section__card:hover .section__card_price {
+  margin-right: 82.75px;
+}
+.section__card:hover i {
+  transform: rotate(0);
 }
 .section__card__sub {
   display: flex;
+  flex-direction: column;
+}
+.section__card__info {
+  display: flex;
+  align-items: flex-end;
   justify-content: space-between;
+  width: 100%;
 }
 .section__card p {
   margin: 0.2rem;
+}
+.section__card aside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #99E2D0;
+  font-size: 1.6rem;
+  color: white;
+  position: absolute;
+  width: 5rem;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  right: 0;
+  margin-right: -82.75px;
+  transition: 0.5s;
+}
+.section__card i {
+  transform: rotate(-270deg);
+  transition: 0.5s;
 }
 .section__delay1 {
   -webkit-animation-delay: 250ms;
