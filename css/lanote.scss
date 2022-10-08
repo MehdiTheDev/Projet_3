@@ -63,6 +63,17 @@
     }
 }
 
+@keyframes ouverture {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 100;
+    }
+}
+
 .section {
     margin-top: 0;
     margin-bottom: 4rem;
@@ -74,14 +85,14 @@
         margin-left: 0.5rem;
     }
     &__card {
-        height: 50px;
+        height: auto;
         background-color: white;
         border-radius: 1rem;
         padding: 1rem;
-        display: flex;
-        flex-direction: column;
         margin: 1.5rem 0;
         box-shadow: 0px 7px 13px rgb(0, 0, 0, 0.1);
+        animation: ouverture 1300ms forwards;
+        opacity: 0;
         &__sub {
             display: flex;
             justify-content: space-between;
@@ -89,6 +100,15 @@
         p {
             margin: 0.2rem;
         }
+    }
+    &__delay1 {
+        animation-delay: 250ms;
+    }
+    &__delay2 {
+        animation-delay: 500ms;
+    }
+    &__delay3 {
+        animation-delay: 750ms;
     }
 }
 
