@@ -6,113 +6,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b5e70897eb.js" crossorigin="anonymous"></script>
     <title>OhMyFood</title>
+    <link rel="stylesheet" href="/css/lanote.css">
+
+     <!--font--> 
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+     <!--end of font-->
+
+
 </head>
 <body>
-    <header>
-        <img src="/images/restaurants/la_note_enchantee.jpg" alt="La note enchantée">
+    <header class="header">
+        <a href="/index.html">
+            <nav class="header__nav">
+                <i class="fa-solid fa-arrow-left"></i>
+                <img src="/images/logo/ohmyfood.png" alt="ohmyfood" class="header__nav__logo">
+            </nav>
+        </a>
+        <img src="/images/restaurants/la_note_enchantee.jpg" alt="La note enchantée" class="header__cover">
     </header>
-    <main>
-        <section>
-            <p>ENTREES</p>
+    <main class="main">
+        <span class="main__title">
+            <h3>La note enchantée</h3>
+            <i class="main__title__icon fa-solid fa-heart"></i>
+        </span>
+        <section class="section">
+            <p class="section__title">Entrées</p>
             <div>
-                <article>
-                    <h2>Ravioles de foie gras</h2>
-                    <div>
-                        <h3>Accompagné de leurs crème à la truffe</h3>
+                <article class="section__card">
+                    <p><strong>Ravioles de foie gras</strong></p>
+                    <div class="section__card__sub">
+                        <p><stong>Accompagné de leurs crème à la truffe</stong></p>
                         <p><strong>25€</strong></p>
                     </div>
                 </article>
-                <article>
-                    <h2>Caviar osciètre</h2>
-                    <div>
-                        <h3>Sur blini à la farine de blé noir</h3>
+                <article class="section__card">
+                    <p><strong>Caviar osciètre</strong></p>
+                    <div class="section__card__sub">
+                        <p>Sur blini à la farine de blé noir</p>
                         <p><strong>35€</strong></p>
                     </div>
                 </article>
-                <article>
-                    <h2>Homard et espuma de potiron</h2>
-                    <div>
-                        <h3>Mariné aux zestes d'orange</h3>
+                <article class="section__card">
+                    <p><strong>Homard et espuma de potiron</strong></p>
+                    <div class="section__card__sub">
+                        <p>Mariné aux zestes d'orange</p>
                         <p><strong>20€</strong></p>
                     </div>
                 </article>
-                <article>
-                    <h2>Foie gras de canard cuit entier</h2>
-                    <div>
-                        <h3>Confiture de figue et pain toasté</h3>
+                <article class="section__card">
+                    <p><strong>Foie gras de canard cuit entier</strong></p>
+                    <div class="section__card__sub">
+                        <p>Confiture de figue et pain toasté</p>
                         <p><strong>35€</strong></p>
                     </div>
                 </article>
             </div>
         </section>
-        <section>
-            <p>PLATS</p>
+        <section class="section">
+            <p class="section__title">Plats</p>
             <div>
-                <article>
-                    <h2>Noix de coquilles Saint-Jacques</h2>
-                    <div>
-                        <h3>Sur lit de purée de céleri-rave</h3>
+                <article class="section__card">
+                    <p><strong>Noix de coquilles Saint-Jacques</strong></p>
+                    <div class="section__card__sub">
+                        <p>Sur lit de purée de céleri-rave</p>
                         <p><strong>40€</strong></p>
                     </div>
                 </article>
-                <article>
-                    <h2>Langoustine poêlée</h2>
-                    <div>
-                        <h3>Purée de patate douce</h3>
+                <article class="section__card">
+                    <p><strong>Langoustine poêlée</strong></p>
+                    <div class="section__card__sub">
+                        <p>Purée de patate douce</p>
                         <p><strong>35€</strong></p>
                     </div>
                 </article>
-                <article>
-                    <h2>Mijoté de queue de boeuf</h2>
-                    <div>
-                        <h3>Et riz sauvage aux zestes de citron</h3>
+                <article class="section__card">
+                    <p><strong>Mijoté de queue de boeuf</strong></p>
+                    <div class="section__card__sub">
+                        <p>Et riz sauvage aux zestes de citron</p>
                         <p><strong>44€</strong></p>
                     </div>
                 </article>
             </div>
         </section>
-        <section>
-            <p>DESSERTS </p>
+        <section class="section">
+            <p class="section__title">Desserts</p>
             <div>
-                <article>
-                    <h2>Macaron noisette et chocolat</h2>
-                    <div>
-                        <h3>Glace au caramel brun et sel de Guérande</h3>
+                <article class="section__card">
+                    <p><strong>Macaron noisette et chocolat</strong></p>
+                    <div class="section__card__sub">
+                        <p>Glace au caramel brun et sel de Guérande</p>
                         <p><strong>18€</strong></p>
                     </div>
                 </article>
-                <article>
-                    <h2>Baba au rhum revisité </h2>
-                    <div>
-                        <h3>Avec son coulis de citron</h3>
+                <article class="section__card">
+                    <p><strong>Baba au rhum revisité</strong></p>
+                    <div class="section__card__sub">
+                        <p>Avec son coulis de citron</p>
                         <p><strong>22€</strong></p>
                     </div>
                 </article>
-                <article>
-                    <h2>Tarte au citron meringuée</h2>
-                    <div>
-                        <h3>Déstructurée</h3>
+                <article class="section__card">
+                    <p><strong>Tarte au citron meringuée</strong></p>
+                    <div class="section__card__sub">
+                        <p>Déstructurée</p>
                         <p><strong>23€</strong></p>
                     </div>
                 </article>
             </div>
         </section>
     </main>
-    <footer>
-        <img src="/images/logo/ohmyfood@2x.svg" alt="OhMyFood">
-        <div>
-            <div>
-                <a href="#">
-                    <i class="fa-solid fa-utensils"></i>
-                    <p>Proposer un restaurant</p> 
-                </a>
-            </div>
-            <div>
-                <a href="#">
-                    <i class="fa-solid fa-handshake-angle"></i>
-                    <p>Devenir partenaire</p>
-                </a>
-            </div>
+    <footer class="ftr">
+        <img src="/images/logo/ohmyfood@2x.svg" class="ftr__logo" alt="OhMyFood">
+        <div class="ftr__list">
+            <a href="#">
+                <i class="fa-solid fa-utensils"></i>
+                <p>Proposer un restaurant</p> 
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-handshake-angle"></i>
+                <p>Devenir partenaire</p>
+            </a>
             <a href="#">
                 <p>Mentions légales</p>
             </a>
