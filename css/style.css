@@ -183,9 +183,6 @@ header img {
   transition: 300ms;
   color: black;
 }
-.rstr__card__iconstrock:hover {
-  opacity: 0;
-}
 .rstr img {
   border-radius: 2rem 2rem 0 0;
   height: 66%;
