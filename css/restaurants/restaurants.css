@@ -75,6 +75,20 @@
   transition: 300ms;
   color: black;
 }
+.main__btnlayout {
+  display: flex;
+  justify-content: center;
+}
+.main__btnlayout__btn {
+  padding: 1rem;
+  border-radius: 4rem;
+  color: white;
+  border: 0;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  font-size: 1.2rem;
+  box-shadow: 0px 7px 15px rgb(170, 170, 170);
+  justify-content: center;
+}
 
 @-webkit-keyframes ouverture {
   0% {
@@ -101,10 +115,6 @@
   transition: 0.5s;
 }
 
-.section {
-  margin-top: 0;
-  margin-bottom: 4rem;
-}
 .section__title {
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -141,12 +151,6 @@
 }
 .section__card__sub {
   overflow: hidden;
-}
-.section__card h4 {
-  margin: 0.2rem;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
 }
 .section__card p {
   margin: 0.2rem;
@@ -211,4 +215,29 @@
 }
 .ftr__list a p {
   margin: 0.5rem 0;
-}/*# sourceMappingURL=lanote.css.map */
+}
+
+/*--------------------------------\
+|  Media queries version tablette |
+\--------------------------------*/
+@media (min-width: 768px) {
+  .main__rstrlist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: auto;
+  }
+  .section {
+    width: calc(50% - 1rem);
+  }
+}
+/*-------------------------------\
+|  Media queries version desktop |
+\-------------------------------*/
+@media (min-width: 992px) {
+  .main {
+    margin-top: 0;
+    border-radius: 0;
+    box-shadow: 0 -150px 200px rgba(0, 0, 0, 0.7);
+  }
+}/*# sourceMappingURL=restaurants.css.map */

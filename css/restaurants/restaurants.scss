@@ -70,6 +70,20 @@
         transition: 300ms;
         color: black;
     }
+    &__btnlayout {
+        display: flex;
+        justify-content: center;
+        &__btn {
+            padding: 1rem;
+            border-radius: 4rem;
+            color: white;
+            border: 0;
+            background-image: linear-gradient(#FF79DA , #9356DC);
+            font-size: 1.2rem;
+            box-shadow: 0px 7px 15px rgb(170, 170, 170);
+            justify-content: center;
+        }
+    }
 }
 
 @keyframes ouverture {
@@ -88,8 +102,6 @@
 }
 
 .section {
-    margin-top: 0;
-    margin-bottom: 4rem;
     &__title {
         font-size: 1.2rem;
         text-transform: uppercase;
@@ -126,12 +138,6 @@
         }
         &__sub {
             overflow: hidden;
-        }
-        h4 {
-            margin: 0.2rem;
-            text-overflow: ellipsis; 
-            overflow: hidden;
-            white-space: nowrap;
         }
         p {
             margin: 0.2rem;
@@ -196,5 +202,36 @@
                 margin: 0.5rem 0;
             }
         }  
+    }
+}
+
+
+/*--------------------------------\
+|  Media queries version tablette |
+\--------------------------------*/
+
+@media (min-width: 768px) {
+    .main {
+        &__rstrlist {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: auto;
+        }
+    }
+    .section {
+        width: calc(50% - 1rem);
+    }
+}
+
+/*-------------------------------\
+|  Media queries version desktop |
+\-------------------------------*/
+
+@media (min-width: 992px) {
+    .main {
+        margin-top: 0;
+        border-radius: 0;
+        box-shadow: 0 -150px 200px rgb(0, 0, 0, 0.7);
     }
 }
