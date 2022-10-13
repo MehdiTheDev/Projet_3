@@ -88,6 +88,10 @@
   font-size: 1.2rem;
   box-shadow: 0px 7px 15px rgb(170, 170, 170);
   justify-content: center;
+  transition: 150ms;
+}
+.main__btnlayout__btn:active {
+  transform: scale(0.9);
 }
 
 @-webkit-keyframes ouverture {
@@ -117,6 +121,7 @@
 
 .section__title {
   font-size: 1.2rem;
+  font-weight: 400;
   text-transform: uppercase;
   width: 2rem;
   border-bottom: 2px solid #99E2D0;
@@ -151,6 +156,12 @@
 }
 .section__card__sub {
   overflow: hidden;
+}
+.section__card h3 {
+  margin: 0.2rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .section__card p {
   margin: 0.2rem;
