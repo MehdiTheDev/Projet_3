@@ -142,10 +142,11 @@ header {
         border: 0;
         background-image: linear-gradient(#FF79DA , #9356DC);
         font-size: 1.2rem;
-        box-shadow: 0px 7px 15px rgb(170, 170, 170);
-        transition: 150ms;
-        &:active {
-            transform: scale(0.90);
+        box-shadow: 0px 7px 15px rgb(0, 0, 0, 0.3);
+        transition: 250ms;
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 7px 15px rgb(0, 0, 0, 0.5);
         }
     }
 }
@@ -190,6 +191,7 @@ header {
         margin-left: -1rem;
         background-color: rgb(245, 245, 245);
         transition: 0.7s;
+        margin: 0.7rem 0;
         &:hover {
             background-color: #9256dc38;
             box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
@@ -223,9 +225,14 @@ header {
         background-color: white;
         border-radius: 2rem;
         box-shadow: 0px 10px 10px rgba(170, 170, 170, 0.425);
-        margin: 1rem 0;
+        margin: 2rem 0;
         height: 250px;
         position: relative;
+        transition: 250ms;
+        &:hover {
+            transform: scale(1.07);
+            box-shadow: 0px 10px 10px rgba(170, 170, 170, 0.925);
+        }
         &__new {
             margin: 0;
             font-size: 1.1rem;
@@ -336,10 +343,10 @@ header {
             width: 100%;
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 1rem;
         }
         &__card {
             max-width: 100%;
+            margin: 1.2rem;
         }
     }
 }

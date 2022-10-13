@@ -222,7 +222,9 @@
   align-items: center;
 }
 .ftr__list a i {
-  padding-right: 1rem;
+  display: flex;
+  align-items: center;
+  width: 2rem;
 }
 .ftr__list a p {
   margin: 0.5rem 0;

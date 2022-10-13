@@ -162,11 +162,12 @@ header img {
   border: 0;
   background-image: linear-gradient(#FF79DA, #9356DC);
   font-size: 1.2rem;
-  box-shadow: 0px 7px 15px rgb(170, 170, 170);
-  transition: 150ms;
+  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.3);
+  transition: 250ms;
 }
-.title__btn:active {
-  transform: scale(0.9);
+.title__btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.5);
 }
 
 .guide {
@@ -210,6 +211,7 @@ header img {
   margin-left: -1rem;
   background-color: rgb(245, 245, 245);
   transition: 0.7s;
+  margin: 0.7rem 0;
 }
 .guide button:hover {
   background-color: rgba(146, 86, 220, 0.2196078431);
@@ -241,9 +243,14 @@ header img {
   background-color: white;
   border-radius: 2rem;
   box-shadow: 0px 10px 10px rgba(170, 170, 170, 0.425);
-  margin: 1rem 0;
+  margin: 2rem 0;
   height: 250px;
   position: relative;
+  transition: 250ms;
+}
+.rstr__card:hover {
+  transform: scale(1.07);
+  box-shadow: 0px 10px 10px rgba(170, 170, 170, 0.925);
 }
 .rstr__card__new {
   margin: 0;
@@ -351,10 +358,10 @@ header img {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
   }
   .rstr__card {
     max-width: 100%;
+    margin: 1.2rem;
   }
 }
 /*-------------------------------\
